@@ -12,6 +12,7 @@ A concrete 5 package ready to install containing
 		- clearing featured image template
 	*	Content block (core) with call to action template
 	*	YouTube block (core) with flex video template
+	*	Form block (core) with forms template
 
 File Attributes that are used through the package
 
@@ -80,8 +81,17 @@ In the packages/c5f5boilerplate/themes/c5f5boilerplate folder execute
 ```bash
 bower update
 ```
+***
 
 ## Contact
 [Send a message](http://www.concrete5.org/profile/-/view/182432/)
 
+***
 
+#### Thanks to
+
+[JordanLev](https://github.com/jordanlev/c5_clean_block_templates) for the custom template for the form block
+
+[herent](https://github.com/herent/c5_boilerplate) for the attributes code
+
+***
