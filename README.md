@@ -23,8 +23,6 @@ File attributes that are installed through the package:
 * 'Clearing Featured Image' to define the featured image for clearing lightbox
 * 'Orbit Link Url' to apply a link to the orbit slides
 
-* * *
-
 
 ## How you can use it
 
@@ -42,10 +40,6 @@ File attributes that are installed through the package:
 
 Now you can apply the above mentioned core blocks to your pages and select the foundation custom templates. That's it.
 
-
-***
-
-
 # You can help with
 
 * Foundation form template for the form block
@@ -54,10 +48,8 @@ Now you can apply the above mentioned core blocks to your pages and select the f
 
 									Pull requests are appreciated.
 
-***
 
-
-#### You want to customize the look of Foundation?
+# You want to customize the look of Foundation?
 #### Requirements
 
   * Ruby 1.9+
@@ -81,17 +73,13 @@ In the packages/c5f5boilerplate/themes/c5f5boilerplate folder execute
 ```bash
 bower update
 ```
-***
 
 ## Contact
 [Send a message](http://www.concrete5.org/profile/-/view/182432/)
 
-***
 
 #### Thanks to
 
 [JordanLev](https://github.com/jordanlev/c5_clean_block_templates) for the custom template for the form block
 
 [herent](https://github.com/herent/c5_boilerplate) for the attributes code
-
-***

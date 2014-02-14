@@ -21,6 +21,7 @@ class C5f5BoilerplatePackage extends Package {  //name like your package folder
         $pkg = parent::install();
         $this->installThemes($pkg);
         $this->installFileAttributes($pkg);
+        $this->installGenerateResponsiveSitemapJob($pkg);
     }
 
     private function installThemes($pkg) {
@@ -58,5 +59,15 @@ class C5f5BoilerplatePackage extends Package {  //name like your package folder
                                      'akIsSearchable' => true,
                                      'akIsSearchableIndexed' => true), $pkg)->setAttributeSet($bfa);
            }
+    }
+
+    private function installGenerateResponsiveSitemapJob($pkg){
+            Loader::model("job");
+
+            //Make sure the job isn't already installed
+            $generate_responsive_sitemap = Job::getByHandle('generate_responsive_sitemap');
+            if(!is_object($generate_responsive_sitemap)){
+                Job::installByPackage("generate_responsive_sitemap", $pkg);
+            }
     }
 }
