@@ -58,7 +58,6 @@ class GenerateResponsiveSitemap extends Job {
 			if(!$hFile = fopen($osName, 'w')) {
 				throw new Exception(t('Cannot open file %s', $osName));
 			}
-            // TODO insert schema here
 			if(!@fprintf($hFile, '<'.'?xml version="1.0" encoding="%s"?>' . self::EOL . 
                     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'. self::EOL .  
                     "\t\t" . 'xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">', APP_CHARSET)) {
@@ -142,7 +141,6 @@ class GenerateResponsiveSitemap extends Job {
 		$changefreq = $page->getAttribute('sitemap_changefreq');
 		$priority = $page->getAttribute('sitemap_priority');
 		$url = SITEMAPXML_BASE_URL . $instances['navigation']->getLinkToCollection($page);
-		//TODO append <mobile:mobile/> here
         if(!@fprintf(
 			$hFile,
 			"%1\$s\t<url>%1\$s\t\t<loc>%2\$s</loc>%1\$s\t\t<lastmod>%3\$s</lastmod>%1\$s\t\t<changefreq>%4\$s</changefreq>%1\$s\t\t<priority>%5\$s</priority>%1\$s\t\t<mobile:mobile/>%1\$s\t</url>",

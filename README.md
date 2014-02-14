@@ -14,14 +14,19 @@ A concrete 5 package ready to install containing
 	*	YouTube block (core) with flex video template
 	*	Form block (core) with forms template
 
-File Attributes that are used through the package
+	File Attributes used:
 
-*  'Description' for showing captions
+	*  'Description' for showing captions
 
-File attributes that are installed through the package:
+	File attributes installed:
 
-* 'Clearing Featured Image' to define the featured image for clearing lightbox
-* 'Orbit Link Url' to apply a link to the orbit slides
+	* 'Clearing Featured Image' to define the featured image for clearing lightbox
+	* 'Orbit Link Url' to apply a link to the orbit slides
+	
+	Jobs installed:
+
+	* Generate a sitemap.xml file for a responsive site
+
 
 
 ## How you can use it
