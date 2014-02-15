@@ -26,6 +26,10 @@ A concrete 5 package ready to install containing
 	Jobs installed:
 
 	* Generate a sitemap.xml file for a responsive site
+	
+	General optimization:
+	*	Don't load concrete5's JS and CSS for visitors
+	*	Don't parse this package's stylesheets. They are not editable through dashboard
 
 
 
@@ -85,6 +89,6 @@ bower update
 
 #### Thanks to
 
-[JordanLev](https://github.com/jordanlev/c5_clean_block_templates) for the custom template for the form block
+[JordanLev](https://github.com/jordanlev/c5_clean_block_templates)
 
-[herent](https://github.com/herent/c5_boilerplate) for the attributes code
+[herent](https://github.com/herent/c5_boilerplate)

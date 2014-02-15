@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="<?php echo LANGUAGE?>">
 <head>
-    <? Loader::element('header_required'); ?>
+    <? Loader::packageElement('header_required', 'c5f5boilerplate'); ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo $this->getStyleSheet('main.css'); ?>">
+    <link rel="stylesheet" href="<?php echo $this->getThemePath(); ?>/main.css">
     <script src="<?php echo $this->getThemePath(); ?>/bower_components/modernizr/modernizr.js"></script>
     <?php
         if ($c->isEditMode()) {  ?>
