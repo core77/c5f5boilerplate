@@ -3,11 +3,11 @@ $navItems = $controller->getNavItems();
 ?>
 
 <!-- foundation 5 top-bar -->
-<?php 
-    $u = new User();
-    if (!$u->isLoggedIn()) { 
-        echo "<div class='contain-to-grid fixed'>"; 
-    } 
+<?php
+$u = new User();
+if (!$u->isLoggedIn()) {
+    echo "<div class='contain-to-grid fixed'>";
+}
 ?>
 
 <nav class="top-bar" data-topbar>
@@ -20,37 +20,43 @@ $navItems = $controller->getNavItems();
 
     <section class="top-bar-section">
         <!-- Right Nav Section -->
-        <ul class="right">
 
-            <?php  foreach ($navItems as $ni) {
-            	
+        <ul class="right">
+            <?php foreach ($navItems as $ni) {
             	$classes = array();
+
             	if ($ni->isCurrent) {
             		$classes[] = 'active';
             	}
-            	if ($ni->inPath) {
-            		$classes[] = 'nav-path-selected';
-            	}
-            	if ($ni->isFirst) {
-            		$classes[] = 'first';
-            	}
-            	$classes = implode(" ", $classes);
-            	?>
-            	
-            	<li class="<?php echo $classes?>">
-            		<a class="<?php echo $classes?>" href="<?php echo $ni->url?>" target="<?php echo $ni->target?>"><?php echo $ni->name?></a>
-            	</li>
-                <li class="divider"></li>
+                if ($ni->hasSubmenu) {
+               		$classes[] = 'has-dropdown';
+               	}
 
-            <?php  } ?>
+                $classes = implode(" ", $classes);
 
-        </ul>
+
+
+               if ($ni->hasSubmenu) {
+                  echo '<li class="' . $classes . '">'; //opens a nav item
+                   echo '<a href="' . $ni->url . '" target="' . $ni->target . '">' . $ni->name . '</a>';
+                    echo '<ul class="dropdown">'; //opens a dropdown sub-menu
+               } else {
+                  echo '<li class="' . $classes . '">'; //opens a nav item
+                   echo '<a href="' . $ni->url . '" target="' . $ni->target . '">' . $ni->name . '</a>';
+                    echo '</li><li class="divider"></li>'; //closes a nav item
+                  echo str_repeat('</ul></li><li class="divider"></li>', $ni->subDepth); //closes dropdown sub-menu(s) and their top-level nav item(s)
+               }
+            }
+            ?>
+            </ul>
+
+
     </section>
 </nav>
 
-<?php 
-    if (!$u->isLoggedIn()) { 
-        echo "</div>"; 
-    } 
+<?php
+if (!$u->isLoggedIn()) {
+    echo "</div>";
+}
 ?>
 <!-- foundation 5 top-bar end-->
