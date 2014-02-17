@@ -34,22 +34,19 @@ if (!$u->isLoggedIn()) {
 
                 $classes = implode(" ", $classes);
 
-
-
-               if ($ni->hasSubmenu) {
-                  echo '<li class="' . $classes . '">'; //opens a nav item
-                   echo '<a href="' . $ni->url . '" target="' . $ni->target . '">' . $ni->name . '</a>';
+                if ($ni->hasSubmenu) {
+                    echo '<li class="' . $classes . '">'; //opens a nav item
+                    echo '<a href="' . $ni->url . '" target="' . $ni->target . '">' . $ni->name . '</a>';
                     echo '<ul class="dropdown">'; //opens a dropdown sub-menu
-               } else {
-                  echo '<li class="' . $classes . '">'; //opens a nav item
-                   echo '<a href="' . $ni->url . '" target="' . $ni->target . '">' . $ni->name . '</a>';
+                } else {
+                    echo '<li class="' . $classes . '">'; //opens a nav item
+                    echo '<a href="' . $ni->url . '" target="' . $ni->target . '">' . $ni->name . '</a>';
                     echo '</li><li class="divider"></li>'; //closes a nav item
-                  echo str_repeat('</ul></li><li class="divider"></li>', $ni->subDepth); //closes dropdown sub-menu(s) and their top-level nav item(s)
+                    echo str_repeat('</ul></li><li class="divider"></li>', $ni->subDepth); //closes dropdown sub-menu(s) and their top-level nav item(s)
                }
             }
             ?>
-            </ul>
-
+        </ul>
 
     </section>
 </nav>

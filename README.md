@@ -1,4 +1,4 @@
-# concrete5 Boilerplate with Foundation 5 frontend
+# concrete5 package boilerplate with Foundation 5 frontend
 
 ## What you get:
 A concrete 5 package ready to install containing
@@ -51,8 +51,11 @@ Now you can apply the above mentioned core blocks to your pages and select the f
 
 # You can help with
 
-* Foundation form template for the form block
-* Navigations like offcanvas, magellan, sidenav ...
+* Navigations like 
+ 	- offcanvas
+ 	- combination of topbar (on large and medium) and offcanvas (small)
+ 	- magellan
+ 	- sidenav
 * ... and more of the Foundation stuff
 
 									Pull requests are appreciated.
