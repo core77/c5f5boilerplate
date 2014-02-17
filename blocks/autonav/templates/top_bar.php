@@ -23,14 +23,14 @@ if (!$u->isLoggedIn()) {
 
         <ul class="right">
             <?php foreach ($navItems as $ni) {
-            	$classes = array();
+                $classes = array();
 
-            	if ($ni->isCurrent) {
-            		$classes[] = 'active';
-            	}
+                if ($ni->isCurrent) {
+                    $classes[] = 'active';
+                }
                 if ($ni->hasSubmenu) {
-               		$classes[] = 'has-dropdown';
-               	}
+                    $classes[] = 'has-dropdown';
+                }
 
                 $classes = implode(" ", $classes);
 

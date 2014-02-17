@@ -1,7 +1,7 @@
 <?php 
-	defined('C5_EXECUTE') or die("Access Denied.");
-	$content = $controller->getContent();
-	
+    defined('C5_EXECUTE') or die("Access Denied.");
+    $content = $controller->getContent();
+
     $class = "class = 'button large radius'";
     $search = "<a title=";
     $replace = "<a " . $class . "title=";
