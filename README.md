@@ -59,6 +59,8 @@ Now you can apply the above mentioned core blocks to your pages and select the f
 * ... and more of the Foundation stuff
 
 									Pull requests are appreciated.
+									
+							Please use 4 spaces instead of tabs for indentation.
 
 
 # You want to customize the look of Foundation?

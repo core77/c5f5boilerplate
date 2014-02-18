@@ -9,7 +9,7 @@ foreach($images as $imgInfo) {
     if ($fp->canRead()) {
 
         $fileName = $f->getFileName();
-        $picturePath 	= $f->getRelativePath();
+        $picturePath = $f->getRelativePath();
         $thumbnail = $f->getThumbnail(2, false);
 
         if($f->getAttribute('clearing_featured_img')) {

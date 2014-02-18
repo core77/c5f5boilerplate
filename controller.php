@@ -14,7 +14,7 @@ class C5f5BoilerplatePackage extends Package {  //name like your package folder
     public function getPackageName() {
         return t("c5f5boilerplate");
     }
-                   
+
     public function install() {
         
         //for better readability we split the install block in some functions
