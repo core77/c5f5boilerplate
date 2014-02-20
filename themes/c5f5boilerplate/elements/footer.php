@@ -32,7 +32,7 @@
     <?php  
         $u = new User();
         if (!$u->isLoggedIn()) {  ?>
-            <script type="text/javascript" src="<?php echo $this->getThemePath(); ?>/bower_components/jquery/jquery.js"></script>
+            <script type="text/javascript" src="<?php echo $this->getThemePath(); ?>/bower_components/jquery/jquery.min.js"></script>
     <?php  } ?>
     <script src="<?php echo $this->getThemePath(); ?>/bower_components/foundation/js/foundation.min.js"></script>
     <script src="<?php echo $this->getThemePath(); ?>/bower_components/foundation/js/vendor/fastclick.js"></script>
