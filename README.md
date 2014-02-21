@@ -5,6 +5,7 @@ A concrete 5 package ready to install containing
 
 	*	Autonav block (core) with
 		- top bar template
+		- breadcrumbs template
 	*	Slideshow block (core) with
 		- orbit slider template
 		- orbit slider template with description (hided on small devices)
@@ -47,7 +48,7 @@ A concrete 5 package ready to install containing
 2. `git clone https://github.com/vl-ad/c5f5boilerplate.git c5f5boilerplate`
 3. Install the package in concrete 5 Dashboard/Extend concrete5 :-)
 
-Now you can apply the above mentioned core blocks to your pages and select the foundation custom templates. That's it.
+Now you can apply the above mentioned core blocks to your pages and select the foundation custom templates. In the concrete5 user interface all the foundation custom templates are shown with an prepended 'F', for example 'F Top Bar'. That's it.
 
 # You can help with
 

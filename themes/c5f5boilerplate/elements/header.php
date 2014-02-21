@@ -12,8 +12,13 @@
     <?php } ?>
 </head>
 <body>
+
+<div class="row">
+    <small-12 class="columns">
+        <?php 
+            $a = new GlobalArea('Header Nav');
+            $a->display();
+        ?>
+    </small-12>
+</div>
     
-    <?php 
-        $a = new GlobalArea('Header Nav');
-        $a->display();
-    ?>

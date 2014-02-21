@@ -8,3 +8,9 @@
 .uneditable-input {
     height: 32px;
 }
+
+$breadcrumbs-margin-top: 30;
+
+.breadcrumbs {
+    margin-top: rem-calc($breadcrumbs-margin-top);
+}
