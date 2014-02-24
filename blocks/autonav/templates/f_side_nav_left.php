@@ -1,0 +1,19 @@
+<?php  defined('C5_EXECUTE') or die("Access Denied.");
+$navItems = $controller->getNavItems(true);
+?>
+
+<ul class="side-nav">
+
+<?php
+for ($i = 0; $i < count($navItems); $i++) {
+	$ni = $navItems[$i];
+	
+	if ($ni->isCurrent) {
+        echo '<li class="active"><a href="' . $ni->url . '" target="' . $ni->target . '">' . $ni->name . '</a></li>';
+	} else {
+		echo '<li><a href="' . $ni->url . '" target="' . $ni->target . '">' . $ni->name . '</a></li>';
+	}
+}
+?>
+
+</ul>
