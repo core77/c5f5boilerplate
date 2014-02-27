@@ -6,9 +6,10 @@ A concrete 5 package ready to install containing
 	*	Autonav block (core) with
 		- top bar template
 		- breadcrumbs template
+		- side nav templates (one aligning left, the other right)
 	*	Slideshow block (core) with
 		- orbit slider template
-		- orbit slider template with description (hided on small devices)
+		- orbit slider template with description (hidden on small devices)
 		- clearing lightbox template 
 		- clearing featured image template
 	*	Content block (core) with call to action template

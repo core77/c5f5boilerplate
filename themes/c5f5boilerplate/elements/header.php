@@ -14,11 +14,11 @@
 <body>
 
 <div class="row">
-    <small-12 class="columns">
+    <div class="small-12 columns">
         <?php 
             $a = new GlobalArea('Header Nav');
             $a->display();
         ?>
-    </small-12>
+    </div>
 </div>
     
