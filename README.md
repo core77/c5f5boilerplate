@@ -15,6 +15,7 @@ A concrete 5 package ready to install containing
 	*	Content block (core) with call to action template
 	*	YouTube block (core) with flex video template
 	*	Form block (core) with forms template
+	* 	Search block (core) with button postfix template
 
 	File Attributes used:
 
