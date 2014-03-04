@@ -9,7 +9,7 @@
     <?php
         if ($c->isEditMode()) {  ?>
         <link rel="stylesheet" href="<?php echo $this->getThemePath(); ?>/typography.css">
-        <style type="text/css">#ccm-highlighter {margin-top:-49px;}</style>
+        <style type="text/css">#ccm-highlighter, .ccm-menu {margin-top:-49px;}</style>
     <?php } ?>
 </head>
 <body>
