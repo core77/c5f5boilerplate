@@ -8,6 +8,7 @@
     <script src="<?php echo $this->getThemePath(); ?>/bower_components/modernizr/modernizr.js"></script>
     <?php
         if ($c->isEditMode()) {  ?>
+        <link rel="stylesheet" href="<?php echo $this->getThemePath(); ?>/typography.css">
         <style type="text/css">#ccm-highlighter {margin-top:-49px;}</style>
     <?php } ?>
 </head>
