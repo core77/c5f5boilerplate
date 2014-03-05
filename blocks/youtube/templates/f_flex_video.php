@@ -21,7 +21,7 @@ if (Page::getCurrentPage()->isEditMode()) { ?>
     
 <?php  } else { ?>
 
-    <div id="youtube<?php echo  $bID; ?>" class="flex-video">
+    <div id="youtube<?php echo  $bID; ?>" class="flex-video widescreen vimeo">
         <iframe class="youtube-player" src="http://www.youtube.com/embed/<?php echo  $videoID . '?rel=0'; ?>" frameborder="0" allowfullscreen></iframe>
     </div>
     
