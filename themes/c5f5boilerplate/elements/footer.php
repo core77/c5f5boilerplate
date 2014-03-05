@@ -30,9 +30,6 @@
     </div>
 </div>
 
-</div>
-<!-- f-zone wrapper end -->
-
 <?php  
     $u = new User();
     if (!$u->isLoggedIn()) {  ?>

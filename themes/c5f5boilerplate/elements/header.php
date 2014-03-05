@@ -14,9 +14,6 @@
 </head>
 <body>
 
-<!-- f-zone wrapper -->
-<div id="f-zone">
-
 <div class="row">
     <div class="small-12 columns">
         <?php 

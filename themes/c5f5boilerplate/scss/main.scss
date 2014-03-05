@@ -1,57 +1,44 @@
 @import "settings";
 @import "normalize";
 
-//scoping the foundation stuff
-#f-zone {
-    //  EITHER import all the foundation features (we don't do this because of "@charset "UTF-8"" in foundation.scss)
-    //  @import "foundation";
+//  EITHER import all the foundation features
+//  @import "foundation";
 
-    //  OR selectively include components. We do this to reduce the file size of main.css
-    //  @import "foundation/components/accordion";
-    @import "foundation/components/alert-boxes";
-    //  @import "foundation/components/block-grid";
-    @import "foundation/components/breadcrumbs";
-    //  @import "foundation/components/button-groups";
-    @import "foundation/components/buttons";
-    @import "foundation/components/clearing";
-    @import "foundation/components/dropdown";
-    //  @import "foundation/components/dropdown-buttons";
-    @import "foundation/components/flex-video";
-    @import "foundation/components/forms";
-    @import "foundation/components/grid";
-    //  @import "foundation/components/inline-lists";
-    //  @import "foundation/components/joyride";
-    //  @import "foundation/components/keystrokes";
-    //  @import "foundation/components/labels";
-    //  @import "foundation/components/magellan";
-    @import "foundation/components/orbit";
-    //  @import "foundation/components/pagination";
-    //  @import "foundation/components/panels";
-    //  @import "foundation/components/pricing-tables";
-    //  @import "foundation/components/progress-bars";
-    //  @import "foundation/components/reveal";
-    @import "foundation/components/side-nav";
-    //  @import "foundation/components/split-buttons";
-    //  @import "foundation/components/switch";
-    @import "foundation/components/tables";
-    //  @import "foundation/components/tabs";
-    //  @import "foundation/components/thumbs";
-    //  @import "foundation/components/tooltips";
-    @import "foundation/components/top-bar";
-    //  @import "foundation/components/offcanvas";
-    @import "foundation/components/visibility";
-
-    //  Custom Styles
-    @import "custom";
-}
-
-// 
-// non-scoped stuff
-//
-
-// because of issues with paragraphs we don't scope this!
+//  OR selectively include components. We do this to reduce the file size of main.css
+//  @import "foundation/components/accordion";
+@import "foundation/components/alert-boxes";
+//  @import "foundation/components/block-grid";
+@import "foundation/components/breadcrumbs";
+//  @import "foundation/components/button-groups";
+@import "foundation/components/buttons";
+@import "foundation/components/clearing";
+@import "foundation/components/dropdown";
+//  @import "foundation/components/dropdown-buttons";
+@import "foundation/components/flex-video";
+@import "foundation/components/forms";
+@import "foundation/components/grid";
+//  @import "foundation/components/inline-lists";
+//  @import "foundation/components/joyride";
+//  @import "foundation/components/keystrokes";
+//  @import "foundation/components/labels";
+//  @import "foundation/components/magellan";
+@import "foundation/components/orbit";
+//  @import "foundation/components/pagination";
+//  @import "foundation/components/panels";
+//  @import "foundation/components/pricing-tables";
+//  @import "foundation/components/progress-bars";
+//  @import "foundation/components/reveal";
+@import "foundation/components/side-nav";
+//  @import "foundation/components/split-buttons";
+//  @import "foundation/components/switch";
+@import "foundation/components/tables";
+//  @import "foundation/components/tabs";
+//  @import "foundation/components/thumbs";
+//  @import "foundation/components/tooltips";
+@import "foundation/components/top-bar";
 @import "foundation/components/type";
+//  @import "foundation/components/offcanvas";
+@import "foundation/components/visibility";
 
-// body {
-//     background: url('images/body-background.png');
-// }
+//  Custom Styles
+@import "custom";
