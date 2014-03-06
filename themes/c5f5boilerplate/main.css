@@ -5767,9 +5767,6 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/*
- *      concrete5 user interface
- */
 /* line 8, scss/_custom.scss */
 .ccm-ui input,
 .ccm-ui textarea,
@@ -5779,7 +5776,7 @@ th.hide-for-touch {
   height: 32px;
 }
 
-/* line 14, scss/_custom.scss */
+/* line 26, scss/_custom.scss */
 .breadcrumbs {
   margin-top: 1.875rem;
 }
