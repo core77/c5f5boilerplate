@@ -19,7 +19,7 @@
 
     <div class="row collapse">
         <div class="small-10 columns">
-            <input name="query" type="text" value="<?php echo htmlentities($query, ENT_COMPAT, APP_CHARSET)?>" placeholder="<?php echo $title?>" class="ccm-search-block-text" />
+            <input name="query" type="search" value="<?php echo htmlentities($query, ENT_COMPAT, APP_CHARSET)?>" placeholder="<?php echo $title?>" class="ccm-search-block-text" />
         </div>
         <div class="small-2 columns">
             <input name="submit" type="submit" value="<?php echo $buttonText?>" class="ccm-search-block-submit button postfix" />
