@@ -4,8 +4,9 @@
 A concrete 5 package ready to install containing
 
 	*	Autonav block (core) with
-		- top bar template
 		- breadcrumbs template
+		- list without bullets template
+		- top bar template
 		- side nav templates (one aligning left, the other right)
 	*	Slideshow block (core) with
 		- orbit slider template
