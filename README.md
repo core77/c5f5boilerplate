@@ -59,7 +59,6 @@ Now you can apply the above mentioned core blocks to your pages and select the f
  	- offcanvas
  	- combination of topbar (on large and medium) and offcanvas (small)
  	- magellan
- 	- sidenav
 * ... and more of the Foundation stuff
 
 									Pull requests are appreciated.
