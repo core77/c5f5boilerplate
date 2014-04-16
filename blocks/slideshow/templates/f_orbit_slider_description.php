@@ -16,9 +16,9 @@ defined('C5_EXECUTE') or die('Access Denied.');
 
             echo "<li>";
             echo "<a href=\"{$orbitLinkUrl}\">";
-            echo    "<img src=\"{$picturePath}\"/>";
-            echo    "<div class=\"orbit-caption hide-for-small-only\">$fileDescription</div>";        
+            echo    "<img src=\"{$picturePath}\"/>";        
             echo "</a>";
+            echo "<div class=\"orbit-caption hide-for-small-only\">$fileDescription</div>";
             echo "</li>\n";
         }
 }
