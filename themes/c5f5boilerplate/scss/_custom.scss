@@ -1,5 +1,8 @@
+// Allows the use of foundation rem-calc() or lower-bound() in your settings
+@import "foundation/functions";
+
 //
-//      concrete5 user interface
+// concrete5 user interface
 //
 .ccm-ui input, 
 .ccm-ui textarea, 
@@ -8,13 +11,6 @@
 .uneditable-input {
     height: 32px;
 }
-
-
-//
-// FOUNDATION
-//
-// Allows the use of rem-calc() or lower-bound() in your settings
-@import "foundation/functions";
 
 
 //
