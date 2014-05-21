@@ -154,13 +154,18 @@ $translatedSubmitLabel = t('Submit');
                 </div>
             <?php endif; ?>
 
+        </div>
+    </div>                  <!-- .captcha -->
+
+    
+    <div class="row">       <!-- submit button -->
+        <div class="small-12 medium-4 columns end">
             <input type="submit" name="Submit" class="submit" value="<?php echo $translatedSubmitLabel; ?>" />
 
             <input name="qsID" type="hidden" value="<?php echo $qsID; ?>" />
             <input name="pURI" type="hidden" value="<?php echo $pURI; ?>" />
-
         </div>
-    </div>                 <!-- .captcha -->
+    </div>                
     
 </form>
 </div><!-- .formblock -->
