@@ -5657,7 +5657,12 @@ th.hide-for-touch {
   height: 32px;
 }
 
-/* line 22, scss/_custom.scss */
+/* line 20, scss/_custom.scss */
 .breadcrumbs {
   margin-top: 1.875rem;
+}
+
+/* line 24, scss/_custom.scss */
+.clearing-thumbs li {
+  margin-bottom: 0.5rem;
 }

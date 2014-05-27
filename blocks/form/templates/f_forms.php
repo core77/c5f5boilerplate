@@ -165,7 +165,7 @@ $translatedSubmitLabel = t('Submit');
             <input name="qsID" type="hidden" value="<?php echo $qsID; ?>" />
             <input name="pURI" type="hidden" value="<?php echo $pURI; ?>" />
         </div>
-    </div>                
+    </div>                  <!-- .submit button -->
     
 </form>
 </div><!-- .formblock -->

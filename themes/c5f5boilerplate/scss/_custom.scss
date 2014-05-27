@@ -17,8 +17,10 @@
 // Own styles
 //
 
-$breadcrumbs-margin-top: 30;
-
 .breadcrumbs {
-    margin-top: rem-calc($breadcrumbs-margin-top);
+    margin-top: rem-calc(30);
 }
+
+.clearing-thumbs li {
+        margin-bottom: rem-calc(8);
+    }
