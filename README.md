@@ -45,13 +45,15 @@ A concrete 5 package ready to install containing
 1. Dowload this repository as a zip file and unzip it
 2. Rename the (unzipped) c5f5boilerplate-master folder to c5f5boilerplate
 3. Copy the c5f5boilerplate folder into the /packages folder of your concrete5 installation
-4. Install the package in concrete5 Dashboard/Extend concrete5 :-)
+4. In the folder packages/c5f5boilerplate/themes/c5f5boilerplate execute a `bower install` and then `compass compile`
+5. Install the package in concrete5 Dashboard/Extend concrete5 :-)
 
 #### Git User? Clone it with git
 1. Grab the terminal
 2. Go to your /packages folder
 2. `git clone https://github.com/vl-ad/c5f5boilerplate.git c5f5boilerplate`
-3. Install the package in concrete5 Dashboard/Extend concrete5 :-)
+3. In the folder packages/c5f5boilerplate/themes/c5f5boilerplate execute a `bower install` and then `compass compile`
+4. Install the package in concrete5 Dashboard/Extend concrete5 :-)
 
 Now you can apply the above mentioned core blocks to your pages and select the foundation custom templates. In the concrete5 user interface all the foundation custom templates are shown with an prepended 'F', for example 'F Top Bar'. That's it.
 
