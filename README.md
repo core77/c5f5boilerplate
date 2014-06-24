@@ -87,9 +87,11 @@ The /scss/_custom.scss is for your additional stuff. Here you can write SCSS but
 
 To compile execute `bash compass watch` in the packages/c5f5boilerplate/themes/c5f5boilerplate folder.
 
-#### Upgrade foundation
+#### Install/Upgrade foundation
 
-In the packages/c5f5boilerplate/themes/c5f5boilerplate folder execute
+It's not always the best idea to use the newest version of Foundation. So this boilerplate is actually set to version 5.2.2. You can change this in the bower.json file in the packages/c5f5boilerplate/themes/c5f5boilerplate folder.
+
+To install/upgrade run
 
 ```bash
 bower update
