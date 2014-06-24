@@ -1,14 +1,15 @@
 'use strict';
 
-// Include Gulp & Tools
+// include gulp & tools
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
+var browserSync = require('browser-sync');
 
 
-// Default task
+// default task
 gulp.task('default', ['compass-dev']);
 
-// Compile Sass Files Expanded
+// compile sass files expanded
 gulp.task('compass-dev', function () {
     gulp.src(['scss/**/*.scss'])
     
@@ -22,7 +23,7 @@ gulp.task('compass-dev', function () {
 });
 
 
-// Compile Sass Files Compressed
+// compile sass files compressed
 gulp.task('compass-deploy', ['clean'] , function () {
     gulp.src(['scss/**/*.scss'])
     
@@ -34,8 +35,15 @@ gulp.task('compass-deploy', ['clean'] , function () {
     }))
 });
 
-// Clean some folders and files
+// delete some files
 gulp.task('clean', function() {
   return gulp.src('./*.css', { read: false }) // much faster
     .pipe($.rimraf());
+});
+
+
+gulp.task('browser-sync', function() {
+    browserSync.init(null, {
+      proxy: "localhost"
+    });
 });
