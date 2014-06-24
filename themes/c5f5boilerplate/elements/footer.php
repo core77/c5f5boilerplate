@@ -30,6 +30,12 @@
     </div>
 </div>
 
+<!-- close the off-canvas menu. these are opened in header.php-->
+    <a class="exit-off-canvas"></a>
+
+    </div>
+</div> <!-- end off canvas -->
+
 <?php  
     $u = new User();
     if (!$u->isLoggedIn()) {  ?>

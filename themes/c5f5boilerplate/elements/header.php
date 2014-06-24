@@ -15,12 +15,15 @@
 </head>
 <body>
 
-<div class="row">
-    <div class="small-12 columns">
+<!-- nav area -->
+<!-- off canvas sections wrapping the main content. these are closed in footer.php-->
+<div class="off-canvas-wrap">
+    <div class="inner-wrap">
+
         <?php 
             $a = new GlobalArea('Header Nav');
             $a->display();
         ?>
-    </div>
-</div>
+
+<!-- end nav area -->
 <!-- end header.php -->

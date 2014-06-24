@@ -7,6 +7,8 @@ A concrete 5 package ready to install containing
 		- breadcrumbs template
 		- list without bullets template
 		- top bar template
+		- off canvas template
+		- top bar and off canvas template (topbar on large, off canvas on medium and small)
 		- side nav templates (one aligning left, the other right)
 	*	Slideshow block (core) with
 		- orbit slider template
