@@ -4,10 +4,11 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
+var reload = browserSync.reload;
 
 
 // default task
-gulp.task('default', ['compass-dev']);
+gulp.task('default', ['browser-sync']);
 
 // compile sass files expanded
 gulp.task('compass-dev', function () {
@@ -46,4 +47,8 @@ gulp.task('browser-sync', function() {
     browserSync.init(null, {
       proxy: "localhost"
     });
+
+    gulp.watch(['./**/*.php'], reload);
+    gulp.watch(['scss/**/*.scss'], ['compass-dev']);
+    gulp.watch(['./*.css'], reload);
 });
