@@ -17,7 +17,7 @@
 
 <!-- nav area -->
 <!-- off canvas sections wrapping the main content. these are closed in footer.php-->
-<div class="off-canvas-wrap">
+<div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
 
         <?php 
